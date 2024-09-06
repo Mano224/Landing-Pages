@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart:Grocery Hub</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('/api/placeholder/1600/900') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        button {
+            font-size: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            border: #ffffff 1px solid;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+        }
+        button:hover {
+            background: #e8491d;
+            color: #ffffff;
+        }
+        #boxes {
+            margin-top: 20px;
+        }
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+        #boxes .box img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        #popular-products {
+            clear: both;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #popular-products h2 {
+            color: #4CAF50;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        footer {
+            clear: both;
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #4CAF50;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Fresh</span>Mart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to FreshMart</h1>
+            <p>Your Neighborhood Grocery Hub</p>
+            <button onclick="alert('Start shopping functionality to be implemented!')">Start Shopping</button>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="static/image/order.jpeg" alt="Easy Ordering">
+                <h3>Easy Ordering</h3>
+                <p>Browse our wide selection and order with just a few clicks</p>
+            </div>
+            <div class="box">
+                <img src="static/image/product.jpeg" alt="Fresh Products">
+                <h3>Fresh Products</h3>
+                <p>We source the freshest local produce and high-quality goods</p>
+            </div>
+            <div class="box">
+                <img src="static/image/Delivery.jpeg" alt="Fast Delivery">
+                <h3>Fast Delivery</h3>
+                <p>Get your groceries delivered right to your door</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular-products">
+        <div class="container">
+            <h2>Popular Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="static/image/apple.jpeg" alt="Fresh Apples">
+                    <h3>Fresh Apples</h3>
+                    <p>$2.99/lb</p>
+                </div>
+                <div class="product-card">
+                    <img src="static/image/milk.jpeg" alt="Organic Milk">
+                    <h3>Organic Milk</h3>
+                    <p>$3.99/gallon</p>
+                </div>
+                <div class="product-card">
+                    <img src="static/image/bread.jpeg" alt="Whole Grain Bread">
+                    <h3>Whole Grain Bread</h3>
+                    <p>$4.50/loaf</p>
+                </div>
+                <div class="product-card">
+                    <img src="static/image/salmon.jpeg" alt="Fresh Salmon">
+                    <h3>Fresh Salmon</h3>
+                    <p>$12.99/lb</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>FreshMart, Copyright &copy; 2024</p>
+    </footer>
+
+    <script>
+    
+    </script>
+</body>
+</html>
